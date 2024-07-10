@@ -1,0 +1,40 @@
+API documentation
+
+
+ROUTE : /tasks,
+METHOD : GET,
+PARAMS : none
+RETURN : [<Task>]
+Description : "Return all the tasks"
+
+ROUTE : /tasks/:UUID,
+METHOD : GET,
+PARAMS : UUID 
+RETURN : <Task>
+Description : "Return the task with specified UUID"
+
+ROUTE : /tasks,
+METHOD : POST,
+BODY : <Task> 
+RETURN : <Task>
+Description : "Create a new Task"
+
+ROUTE : /tasks/:UUID,
+METHOD : PUT,
+PARAMS : UUID 
+BODY : <Task> 
+RETURN : <Task>
+Description : "Replace the task with specified UUID"
+
+ROUTE : /tasks/:UUID,
+METHOD : PATCH,
+PARAMS : UUID 
+BODY : <Task> 
+RETURN : <Task>
+Description : "Update partially the task with specified UUID"
+
+ROUTE : /tasks/:UUID,
+METHOD : DELETE,
+PARAMS : UUID 
+RETURN : <Task>
+Description : "Delete the task with specified UUID"

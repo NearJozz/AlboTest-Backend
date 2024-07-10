@@ -1,0 +1,19 @@
+Schema documentation
+dependencies : uuid
+
+schema Task:
+    UUID  : String <unique index>
+    name : String
+    description : String
+    startDate : Date
+    endDate : Date
+    responsible : String
+    done : Boolean
+
+schema Metric:
+    UUID : String <unique index>
+    method : String
+    action : String
+    startDate : Date
+    endDate : Date
+    latency : Number
